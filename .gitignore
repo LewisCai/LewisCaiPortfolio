@@ -25,7 +25,6 @@ TestResults.xml
 /node_modules
 /.pnp
 .pnp.js
-/heroku
 
 # testing
 /coverage
