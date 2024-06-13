@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import LogoTitle from '../../assets/images/logo-s.png';
+import LogoTitle from '../../assets/images/L.png';
 import { useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const nameArray = ['l', 'e', 'w', 'i', 's'];
+    const nameArray = ['e', 'w', 'i', 's'];
     const titleArray = ['d', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
 
     return (
