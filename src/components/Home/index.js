@@ -29,7 +29,7 @@ const Home = () => {
                 <br/>
                 <AnimatedLetters letterClass={letterClass}
                 strArray={titleArray}
-                idx={15} />
+                idx={19} />
                 </h1> 
                 <h2>
                     Welcome To My Portfolio
