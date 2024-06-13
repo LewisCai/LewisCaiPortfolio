@@ -16,7 +16,7 @@ const Home = () => {
       useEffect(() => {
         const timeoutId = setTimeout(() => {
             setLetterClass('text-animate-hover');
-        }, 4000);
+        }, 6000);
 
         // Cleanup function to clear the timeout
         return () => clearTimeout(timeoutId);
