@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/L.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 
@@ -12,6 +12,16 @@ const Home = () => {
         'r', ' ', 'S', 'c', 'i', 'e', 'n', 'c', 'e',
         ' ', 'G', 'r', 'a', 'd', 'u', 'a', 't', 'e'
       ];
+    
+      useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setLetterClass('text-animate-hover');
+        }, 4000);
+
+        // Cleanup function to clear the timeout
+        return () => clearTimeout(timeoutId);
+    }, []);
+
 
     return (
         <div className="container home-page">
