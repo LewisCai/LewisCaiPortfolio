@@ -7,18 +7,29 @@ import './index.scss';
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const nameArray = ['e', 'w', 'i', 's'];
-    const titleArray = ['d', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
+    const titleArray = [
+        'A', ' ', 'C', 'o', 'm', 'p', 'u', 't', 'e',
+        'r', ' ', 'S', 'c', 'i', 'e', 'n', 'c', 'e',
+        ' ', 'G', 'r', 'a', 'd', 'u', 'a', 't', 'e'
+      ];
 
     return (
         <div className="container home-page">
             <div className="text-zone">
-                <h1>Hi, <br/> I'm
+                <h1>
+                <span className={letterClass}>H</span>
+                <span className={`${letterClass} _12`}>i,</span>
+                <br/> 
+                <span className={`${letterClass} _13`}>I</span>
+                <span className={`${letterClass} _14`}>'m</span>
                 <img src={LogoTitle} alt="developer"/> 
                 <AnimatedLetters letterClass={letterClass}
                 strArray={nameArray}
                 idx={15} />
                 <br/>
-                A Computer Science Graduate
+                <AnimatedLetters letterClass={letterClass}
+                strArray={titleArray}
+                idx={15} />
                 </h1> 
                 <h2>
                     Welcome To My Portfolio
