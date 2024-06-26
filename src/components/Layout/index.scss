@@ -41,7 +41,8 @@
     animation-delay: 1s;
 }
 
-.about-page {
+.about-page, 
+.contact-page {
     .text-zone {
         position: absolute;
         left: 10%;
@@ -53,7 +54,7 @@
         max-height: 90%;
 
         h1 {
-            font-size: 53;
+            font-size: 53px;
             font-family: 'Coolvetica';
             color: #000000;
             font-weight: 400;
